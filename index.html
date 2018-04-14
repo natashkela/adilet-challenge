@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <title>User Activity - AINV Inc. </title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h1>Welcome to AINV User Activity Tracking!</h1>
+            <h4>We want to keep up with our employee activity and ensure that <br /> everyone gets credit for their work!</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="uploading">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Please upload a .CSV file and choose a date for which you are uploading it for.
+              <br />NOTE: Only CSV files are supported.
+            </p>
+          </div>
+          <div class="col-md-12 text-center">
+            <form id="upload" method="POST" enctype="multipart/form-data">
+              <input type="date" class="form-control" name="date" required/>
+              <input type="file" name="fileToUpload" required/>
+              <button type="submit" class="btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="checking">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Please enter the email, month and year to check the user activity.
+            </p>
+          </div>
+          <div class="col-md-12 text-center">
+            <form id="checking" method="POST">
+              <input required type="email" class="form-control" name="email" placeholder="example@example.com">
+              <input required type="text" class="form-control" name="month" placeholder="mm">
+              <input required type="text" class="form-control" name="year" placeholder="yyyy" />
+              <button type="submit" class="btn-success">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-12 text-center result" id="result">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      &copy All Rights Reserved. AINV Inc. 2018
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

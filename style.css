@@ -1,0 +1,36 @@
+header{
+  padding:200px;
+  width:100%;
+  background: url("img/header-background.jpg") no-repeat;
+  background-size:cover;
+}
+.uploading{
+  background-color: rgb(241, 224, 198);
+  padding:200px;
+}
+.checking{
+  padding:150px;
+  background-color: rgb(218, 159, 109);
+}
+.col-md-12 p,
+.col-md-12 h4 {
+  margin-top:20px;
+}
+
+form input, form button{
+  margin:0 auto;
+  display:block;
+  margin-top:40px;
+}
+form input[type="file"]{
+  padding-left:120px;
+}
+.form-control{
+  max-width:200px;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(168, 104, 86);
+  padding:30px;
+}
