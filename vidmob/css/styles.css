@@ -1,0 +1,196 @@
+*{
+	margin:0;
+	border:0;
+	font-family: 'proxima-nova', sans-serif;
+
+}
+body{
+	background-color:rgba(44,157,183,1);
+}
+header{
+	padding:18px 15px;
+	color:white;
+}
+.login,.account{
+	float:right;
+	color:white;
+}
+.account{
+	margin-right:20px;
+}
+.login{
+	background:transparent;
+	border:1px solid white;
+	border-radius:99px;
+	text-transform:uppercase;
+	min-width:100px;
+	font-size:12px;
+	padding:5px;
+	cursor: pointer;
+	font-weight:600;
+}
+
+.login:hover{
+	background-color:white;
+	color:#1fbde1;
+	font-weight:600;
+}
+.next-button{
+	float:right;
+	margin-top:30px;
+	background-color:rgba(44,157,183,1);
+	padding:15px;
+	border-radius:99px;
+	min-width:150px;
+	color:white;
+	text-transform: uppercase;
+	font-weight:600;
+	font-size:13px;
+	letter-spacing:0.04em;
+	cursor:pointer;
+}
+.next-button:hover{
+	background-color:#1fbde1;
+}
+
+.starting-email,
+.join-us-info{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+	min-height:500px;
+	width:100%;
+}
+.starting-email .get-started,
+.join-us-info .join{
+	background-color:white;
+	padding:30px 42px;
+	border-radius:3px;
+}
+h3{
+	color:rgb(61,73,89);	
+}
+.starting-email .get-started p,
+.join-us-info .join p{
+	color:rgb(158,169,181);
+	font-size:13px;
+}
+
+input{
+	display:block;
+	width:100%;
+	padding:10px;
+	border:1px solid rgb(238,240,243);
+	border-radius:2px;
+	margin-bottom:20px;
+}
+input[type="radio"]{
+	width:auto;
+	display:inline;
+	background-color:#e99e16;
+
+}
+::placeholder{
+	color:rgb(158,169,181);;
+}
+
+.popup{
+	z-index:1;
+	position:absolute;
+	display:none;
+}
+.popup .close-popup{
+	text-transform:uppercase;
+	color:white;
+	background-color:transparent;
+	margin-right:100px;
+	cursor:pointer;
+	position:absolute;
+	right:-90px;
+	top:-30px;
+}
+.popup-content{
+	background-color:white;
+	position:relative;
+	border-radius:3px;
+	text-align:center;
+	padding:40px;
+}
+
+.popup-content img{
+	height:100px;
+	margin-bottom:30px;
+}
+.popup-content h3{
+	margin-bottom:30px;
+}
+.popup-content p {
+	font-size:15px;
+	color:rgb(158,169,181);
+}
+.mask {
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display:none;
+}
+
+.terms{
+	color:#e2e6eb;
+	margin-top:40px;
+	font-size:12px;
+}
+
+.tooltip-inner{
+    background: #de5454;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    width:100%;
+    padding:20px;
+    max-width:300px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: -.2px;
+    text-align: center;
+}
+
+.tooltip-arrow{
+	  border-top-color: #de5454 !important;
+}
+
+.tooltip .arrow:before {
+ border-bottom-color:#de5454 !important;
+ border-top-color:#de5454 !important;
+ }
+.radio-button{
+	position: relative;
+    visibility: visible;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 3px 12px;
+    background: url(../img/ic-unselected.svg) center no-repeat;
+    cursor: pointer;
+    transition: .5s linear all;
+}
+.radio-button:hover{
+    background: url(../img/ic-unselected-hover.svg) center no-repeat;
+}
+.radio-margin{
+	margin-left:7px;
+}
+.radio-selected {
+	    background: url(../img/ic-selected.svg) center no-repeat;
+}
+.bootstrap-tagsinput .tag{
+	color:rgb(158,169,181);
+}
+.tagsinput{
+	margin-top:30px;
+}
