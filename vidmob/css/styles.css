@@ -15,7 +15,7 @@ a{
 	color:#e2e6eb;
 }
 h3{
-	color:rgb(61,73,89);	
+	color:rgb(61,73,89);
 }
 input{
 	display:block;
@@ -30,7 +30,14 @@ input[type="radio"]{
 	display:inline;
 	background-color:#e99e16;
 }
-
+.center{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
 ::placeholder{
 	color:rgb(158,169,181);
 }
@@ -159,6 +166,7 @@ input[type="radio"]{
 /*------------------------------------Tooltip Styles for Error Start-----------------------------*/
 .tooltip-inner{
     background: #de5454;
+		opacity:1;
     color: #fff;
     text-align: center;
     font-weight: 700;
@@ -171,7 +179,9 @@ input[type="radio"]{
     letter-spacing: -.2px;
     text-align: center;
 }
-
+.tooltip.show{
+	opacity:1;
+}
 .tooltip-arrow{
 	  border-top-color: #de5454 !important;
 }
@@ -236,7 +246,7 @@ input[type="radio"]{
     float: right;
  }
  .bootstrap-tagsinput .tag [data-role="remove"]:hover{
- 	color:red;
+ 	color:#de5454;
  }
 .bootstrap-tagsinput .tag [data-role="remove"]:after {
   font-family: FontAwesome;
