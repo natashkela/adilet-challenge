@@ -33,8 +33,17 @@ $(document).ready(function(){
 	$('.radio-button').on('click',function(e){
 		$('.radio-button').removeClass('radio-selected');
 		$(this).addClass('radio-selected');
+		if($(this).attr("data-choose")==="1"){
+			$("#tags-input1").show();
+			$("#tags-input2").hide();
+		}
+		else{
+			$("#tags-input2").show();
+			$("#tags-input1").hide();
+		}
+
 	});
 	$('.email-domains').on('submit',function(e){
-			e.preventDefault();
+		e.preventDefault();
 	});
 });

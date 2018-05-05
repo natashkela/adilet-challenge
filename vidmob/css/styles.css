@@ -2,7 +2,6 @@
 	margin:0;
 	border:0;
 	font-family: 'proxima-nova', sans-serif;
-
 }
 body{
 	background-color:rgba(44,157,183,1);
@@ -11,6 +10,32 @@ header{
 	padding:18px 15px;
 	color:white;
 }
+a{
+	text-decoration: none;
+	color:#e2e6eb;
+}
+h3{
+	color:rgb(61,73,89);	
+}
+input{
+	display:block;
+	width:100%;
+	padding:10px;
+	border:1px solid rgb(238,240,243);
+	border-radius:2px;
+	margin-bottom:20px;
+}
+input[type="radio"]{
+	width:auto;
+	display:inline;
+	background-color:#e99e16;
+}
+
+::placeholder{
+	color:rgb(158,169,181);
+}
+
+/*----------------------------------- Header Section Styles Start-----------------------------*/
 .login,.account{
 	float:right;
 	color:white;
@@ -35,6 +60,8 @@ header{
 	color:#1fbde1;
 	font-weight:600;
 }
+/*-------------------------------------- Header Section Styles End-------------------------------*/
+/*---------------------------------------Button Styles-------------------------------------------*/
 .next-button{
 	float:right;
 	margin-top:30px;
@@ -53,6 +80,9 @@ header{
 	background-color:#1fbde1;
 }
 
+/*------------------------------------------Button Styles End-----------------------------------*/
+/*-----------------------------------Get Started Section Styles Start---------------------------*/
+/*-----------------------------------Join Us Section Styles Start-------------------------------*/
 .starting-email,
 .join-us-info{
 	display:flex;
@@ -68,33 +98,15 @@ header{
 	padding:30px 42px;
 	border-radius:3px;
 }
-h3{
-	color:rgb(61,73,89);	
-}
+
 .starting-email .get-started p,
 .join-us-info .join p{
 	color:rgb(158,169,181);
 	font-size:13px;
 }
-
-input{
-	display:block;
-	width:100%;
-	padding:10px;
-	border:1px solid rgb(238,240,243);
-	border-radius:2px;
-	margin-bottom:20px;
-}
-input[type="radio"]{
-	width:auto;
-	display:inline;
-	background-color:#e99e16;
-
-}
-::placeholder{
-	color:rgb(158,169,181);;
-}
-
+/*-----------------------------------Get Started Section Styles End----------------------------*/
+/*-----------------------------------Join Us Section Styles End--------------------------------*/
+/*-----------------------------------Popup for Existing Company-------------------------------*/
 .popup{
 	z-index:1;
 	position:absolute;
@@ -138,13 +150,13 @@ input[type="radio"]{
   height: 100%;
   display:none;
 }
-
+/*------------------------------------Popup for Existing Company End-----------------------------*/
 .terms{
 	color:#e2e6eb;
 	margin-top:40px;
 	font-size:12px;
 }
-
+/*------------------------------------Tooltip Styles for Error Start-----------------------------*/
 .tooltip-inner{
     background: #de5454;
     color: #fff;
@@ -168,6 +180,8 @@ input[type="radio"]{
  border-bottom-color:#de5454 !important;
  border-top-color:#de5454 !important;
  }
+ /*--------------------------------Tooltip Styles for Error End----------------------------------*/
+ /*--------------------------------Radio Button Styles Start-------------------------------------*/
 .radio-button{
 	position: relative;
     visibility: visible;
@@ -186,11 +200,47 @@ input[type="radio"]{
 	margin-left:7px;
 }
 .radio-selected {
-	    background: url(../img/ic-selected.svg) center no-repeat;
+	background: url(../img/ic-selected.svg) center no-repeat;
 }
-.bootstrap-tagsinput .tag{
-	color:rgb(158,169,181);
+/*--------------------------------Radio Button Styles End---------------------------------------*/
+/*--------------------Bootstrap Eaail Domain (Tags) Input Style Start---------------------------*/
+.bootstrap-tagsinput .tag {
+    color: #bdc4cc;
+    word-wrap:break-word;
+    display: block;
+    width: 49%;
+    padding: 3px;
+    float: left;
+    border: 1px solid #bdc4cc;
+    border-radius: 2px;
+    margin-bottom: 3px;
+    min-height: 30px;
+    text-align: center;
+    padding:3px;
+}
+.bootstrap-tagsinput .tag:hover {
+    color: black;
+
+}
+#tags-input1, #tags-input2{
+	display:none;
 }
 .tagsinput{
 	margin-top:30px;
 }
+.bootstrap-tagsinput{
+	width:100%;
+	margin-top:20px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+    float: right;
+ }
+ .bootstrap-tagsinput .tag [data-role="remove"]:hover{
+ 	color:red;
+ }
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  font-family: FontAwesome;
+  content: "\f057";
+  width:50%;
+}
+/*-------------------------Bootstrap Email Domain (Tags) Input Style End------------------*/
